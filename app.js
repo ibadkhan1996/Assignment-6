@@ -304,3 +304,125 @@
 // document.getElementById("lateCharges").innerHTML = lateCharges;
 // var lateBill = Number(netAmount) + Number(lateCharges);
 // document.getElementById("lateBill").innerHTML = (lateBill).toFixed(2);
+
+// // Chapter 35-38
+
+// // Task 1
+// function tellDate(){
+//     var date = new Date();
+//     alert(date);
+// }
+// tellDate();
+
+// // Task 2
+// function fullName(){
+//     var firstName = prompt("Enter your first name");
+//     var lastName = prompt("Enter your last name");
+//     var fullName = firstName + " " + lastName;
+//     alert("Hello, " + fullName + "!");
+// }
+// fullName();
+
+// // Task 3
+// function addNum(){
+//     var firstNum = +prompt("Enter first number");
+//     var secondNum = +prompt("Enter second number");
+//     return firstNum + secondNum
+// }
+// console.log(addNum())
+
+// // Task 4
+// function calc(num1,opr,num2){
+//     if(opr == "+"){
+//         console.log(num1 + num2);
+//         return;
+//     }
+//     else if(opr == "-"){
+//         console.log(num1 - num2);
+//         return;
+//     }
+//     else if(opr == "*" ){
+//         console.log(num1 * num2);
+//         return;
+//     }
+//     else if(opr == "/"){
+//         console.log(num1 / num2);
+//         return;
+//     }
+//     else{
+//         alert("Enter correct operator");
+//         return;
+//     }
+// }
+// calc(5, "-" , 10);
+
+// // Task 5
+// function square(num){
+//     var sq = num * num;
+//     console.log(sq)
+// }
+// square(5);
+
+// // Task 6
+// function fact(n){
+//     if(n == 0){
+//         return 1;
+//     }
+//     else{
+//         return n * fact(n - 1);
+//     }
+// }
+// console.log(fact(100))
+
+// // Task 7
+// function counting(num1,num2){
+//     for(i = num1; i <= num2; i++){
+//         console.log(i);
+//     }
+// }
+// counting(1,10)
+
+// // Task 8
+// function triangle(num1,num2){
+//     var base = num1 * num1;
+//     var perp = num2 * num2;
+//     var hyp = base + perp;
+//     console.log(hyp)
+// }
+// triangle(5,2);
+
+// // Task 9
+// function area(num1,num2){
+//     var width = num1;
+//     var height = num2;
+//     var area = width * height;
+//     console.log(area)
+//     return area;
+// }
+// area(2,4);
+
+// // Task 10
+// function circle(r){
+//     var pi = Math.PI;
+//     circum = (2 * pi) * r;
+//     console.log(circum);
+//     area = pi * (r * r);
+//     console.log(area);
+// }
+// circle(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
