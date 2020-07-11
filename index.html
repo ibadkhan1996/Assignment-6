@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 6</title>
+    <style>
+        p {
+            margin: 0px;
+            margin-bottom: 5px;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>K-Electric Bill</h1>
+    <p>Customer Name: <span id="customerName"></span></p>
+    <p>Month: <span id="month"></span></p>
+    <p>Number of Units: <span id="unitUsed"></span></p>
+    <p>Charges per unit: <span id="perUnit"></span></p>
+    <br>
+    <p>Net Amount Payable (witin Due Date): <span id="totalBill"></span></p>
+    <p>Late payment surcharge (10% bill):  <span id="lateCharges"></span></p>
+    <p>Gross Amount Payable (after Due Date):  <span id="lateBill"></span></p>
 </body>
 <script src="app.js"></script>
 </html>

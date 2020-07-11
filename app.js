@@ -171,4 +171,136 @@
 //     alert("Try again to find a secret number.");
 // }
 
-// Chapter 31-34
+// // Chapter 31-34
+
+// // Task 1
+// var currentDate = new Date();
+// document.write(currentDate);
+
+// // Task 2
+// var monthArr = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+// var date = new Date();
+// var currentMonth = date.getMonth();
+// alert(monthArr[currentMonth]);
+
+// // Task 3
+// var dayArr = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+// var date = new Date();
+// var today = date.getDay();
+// var day = dayArr[today];
+// if(day.length > 3){
+//     var shortDay = day.slice(0,3);
+// }
+// alert(shortDay);
+
+// // Task 4
+// var date = new Date();
+// var today = date.getDay();
+// if(today == 0 || today == 6){
+//     alert("It's Fun day");
+// }
+// else{
+//     alert("It's week day");
+// }
+
+// // Task 5
+// var date = new Date();
+// var currentDate = date.getDate();
+// var firstHalf = "First fifteen days of the month";
+// var secondHalf = "Last fifteen days of the month";
+// if(currentDate < 16){
+//     document.write(firstHalf);
+// }
+// else{
+//     document.write(secondHalf);
+// }
+
+// // Task 6
+// var date = new Date();
+// var milli= date.getTime();
+// var min = (milli/(1000*60));
+// var accuMin = Math.floor(min);
+// document.write("Current Date: " + date + "<br>");
+// document.write("Elapsed milliseconds since January 1, 1970: " + milli + "<br>");
+// document.write("Elapsed minutes since January 1, 1970: " + accuMin + "<br>");
+
+// // Task 7
+// var date = new Date();
+// var hour = date.getHours();
+// console.log(hour);
+// if(hour >= 12){
+//     alert("It's PM");
+// }
+// else{
+//     alert("It's AM");
+// }
+
+// // Task 8
+// var laterDate = new Date("Dec 31, 2020");
+// alert(laterDate);
+
+// // Task 9
+// var ramadanDate = new Date("April 24, 2020");
+// var ramadanMilli = ramadanDate.getTime();
+// var currentDate = new Date();
+// var currentMilli = currentDate.getTime();
+// var milliDiff = currentMilli - ramadanMilli;
+// var ramadanDay = Math.floor(milliDiff/(1000*60*60*24));
+// document.write(ramadanDay + " days have passed since 1st Ramadan, 2020" + "<br>");
+
+// var bakraEidDate = new Date("July 31, 2020");
+// var bakraEidMilli = bakraEidDate.getTime();
+// var currentDate = new Date();
+// var currentMilli = currentDate.getTime();
+// var milliDiff = bakraEidMilli - currentMilli;
+// var bakraEidDay = Math.floor(milliDiff/(1000*60*60*24));
+// document.write(bakraEidDay + " days are remaining in Eid Al Adha, 2020" + "<br>");
+
+// var askDate = prompt("Enter a date","mm dd, yy");
+// var givenDate = new Date(askDate);
+// var givenDateMilli = givenDate.getTime();
+// var currentDate = new Date();
+// var currentMilli = currentDate.getTime();
+// var milliDiff = currentMilli - givenDateMilli;
+// var requiredDay = Math.floor(milliDiff/(1000*60*60*24));
+// document.write(requiredDay + " days have passed since " + askDate + "<br>");
+
+// // Task 10
+// var startDate = new Date("January 01, 2020");
+// var startMilli = startDate.getTime();
+// var currentDate = new Date();
+// var currentMilli = currentDate.getTime();
+// var secDiff = currentMilli - startMilli;
+// var seconds = Math.floor(secDiff/(1000));
+// document.write("On reference date " + currentDate + "<br>" + seconds + " seconds have passed since beginning of 2020");
+
+// // Task 11
+// var currentDate = new Date();
+// document.write("current date: " + currentDate + "<br>");
+// var hourBefore = currentDate.setHours(0);
+// document.write("1 hour ago, it was " + currentDate);
+
+// // Task 12
+// var age = +prompt("Enter your age");
+// var birthYear = 2020 - age;
+// document.write("Your age is " + age + "<br>");
+// document.write("Your birth year is " + birthYear);
+
+// // Task 13
+// var monthArr = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+// var date = new Date();
+// var currentMonth = date.getMonth();
+// var billingMonth = monthArr[currentMonth - 1];
+// var customerName = prompt("Enter your Name");
+// var unitUsed = +prompt("Enter number of units used");
+// var perUnit = +prompt("Enter per unit rate");
+// var netAmount = unitUsed * perUnit;
+// document.getElementById("customerName").innerHTML = customerName;
+// document.getElementById("month").innerHTML = billingMonth;
+// document.getElementById("unitUsed").innerHTML = unitUsed;
+// document.getElementById("perUnit").innerHTML = perUnit;
+// document.getElementById("totalBill").innerHTML = netAmount;
+// var lateCharges = (netAmount*10/100).toFixed(2); 
+// document.getElementById("lateCharges").innerHTML = lateCharges;
+// var lateBill = Number(netAmount) + Number(lateCharges);
+// document.getElementById("lateBill").innerHTML = (lateBill).toFixed(2);
